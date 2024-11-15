@@ -1221,3 +1221,35 @@ a {
     margin: 0.2rem 0;
 }
 
+.skills, .servicos {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-skills, .container-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-skills, .servicos-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.box-skills i, .servicos-cards .card-icon {
+    font-size: 2em;
+    color: #007bff;
+}
+
+@media (min-width: 768px) {
+    .box-skills, .servicos-cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+}
